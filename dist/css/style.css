@@ -773,6 +773,20 @@ padding:0 50px 50px;
   max-width:20px;
   margin-right: 2px;
 }
+.mailto
+{
+  padding: 0;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+.mailto:hover{
+  color:#FFF;
+  text-decoration: none;
+}
 @media (min-width: 1200px) {
   .profile-section .col-md-4 {
     padding: 0 30px;
