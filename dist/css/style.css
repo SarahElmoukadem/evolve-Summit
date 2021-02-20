@@ -47,6 +47,7 @@
   padding: 10px 0;
   z-index: 99;
 }
+
 .fixed .main-header a,
 .fixed .main-header button
 
@@ -533,7 +534,7 @@ footer ul li {
   margin-right: 20px;
 }
 footer ul li:last-child {
-  margin-left: 0px;
+  /* margin-left: 0px; */
   margin-right: 0px;
 }
 footer ul li button {
@@ -985,3 +986,10 @@ margin:15px 0;
     display: none;
   }
 }
+@media (min-width: 768px) {
+  .fixed .main-header .d-md-block
+  {
+    display: flex !important;
+    margin-bottom: 0;
+  }
+  }
