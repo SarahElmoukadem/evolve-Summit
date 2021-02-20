@@ -27,8 +27,10 @@
 .main-header {
   position: absolute;
   top: 50px;
-  left: calc((100vw - 1140px) / 2);
-  right: calc((100vw - 1140px) / 2);
+  /* left: calc((100vw - 1140px) / 2);
+  right: calc((100vw - 1140px) / 2); */
+  left: 15px;
+  right: 15px;
   margin: auto;
   text-align: center;
 }
