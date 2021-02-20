@@ -34,7 +34,7 @@
     <div class="container">
         <div class="container main-header">
             <h1 class="d-none d-md-block">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     RESILIENCE SUMMIT
                 </a>
             </h1>
@@ -44,7 +44,7 @@
 
                 <nav class="navbar navbar-expand-lg">
                     <h1 class="d-block d-md-none">
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand" href="index.html">
                             RESILIENCE SUMMIT
                         </a>
                     </h1>
@@ -56,16 +56,17 @@
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
 
-                            <a class="nav-link" href="#">Masterclass</a>
-                            <a class="nav-link" href="#">Past EVENTS</a>
+                            <a class="nav-link" href="index.html">Masterclass</a>
+                            <a class="nav-link" href="https://resiliencesummit.online/" target="_blank">Past EVENTS</a>
                             <!-- <a class="nav-link" href="#">ABOUT </a> -->
                             <!-- Button trigger modal -->
                             <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4">
                                 ABOUT
                             </button>
 
+                            <a class="nav-link" href="mailto:contactus@resiliencesummit.online">CONTACT US</a>
                             <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                CONTACT US
+                                
                             </button>
                         </div>
                     </div>
@@ -719,7 +720,7 @@
                                         I do agree to the terms & conditions
                                     </label>
                                 </div>
-                                <p class="msg">
+                                <p id="confirmation" class="msg" style="display:none;">
                                     <img src="dist/images/tick@3x.png" alt="">
                                     Thanks for subscribing to our newsletter
                                 </p>
@@ -750,7 +751,8 @@
                     <ul>
                         <li>
                             <!-- Button trigger modal -->
-                            <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            
+                            <button type="button" class="" href="mailto:contactus@resiliencesummit.online">
                                 CONTACT
                             </button>
                         </li>
@@ -1153,10 +1155,10 @@
                 if (fn.value !== "" && ln.value !== "" && e.value !== "") {
                     var dataString = 'FirstName=' + fn + '&LastName=' + ln + '&Email=' + e;
 
-                    //var form = document.getElementById("registerForm");
-                    //var msg = document.getElementById("confirmation");
-                    //form.style.display = "none";
-                    //msg.style.display = "block";
+                    var form = document.getElementById("registerForm");
+                    var msg = document.getElementById("confirmation");
+                    form.style.display = "none";
+                    msg.style.display = "block";
 
 
                     $.ajax({
