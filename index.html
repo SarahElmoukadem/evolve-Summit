@@ -17,20 +17,20 @@
     <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet"> -->
 
     <link rel="stylesheet" href="dist/css/style.css" />
-    
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162930176-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-162930176-1');
-</script>
-    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162930176-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-162930176-1');
+    </script>
+
 </head>
 
-<body class="home">
+<body class="home sticky">
     <div class="container">
         <div class="container main-header">
             <h1 class="d-none d-md-block">
@@ -73,8 +73,11 @@
             </header>
 
         </div>
+    </div>
 
         <section class="intro">
+    <div class="container">
+
             <div class="main-intro">
 
                 <div class="intro-desc">
@@ -117,8 +120,10 @@
                     things happen in your life for more happiness, fulfillment, and alignment.
                 </p>
             </div>
+        </div>
         </section>
 
+        <div class="container">
 
         <section class="col-wz-img intro-desc-white-bg">
             <div class="row  align-items-center">
@@ -651,8 +656,8 @@
                                 or
                                 webinars.
                             </h4>
-                            
-                <!-- <div class="row" id="confirmation" style="display:none;">
+
+                            <!-- <div class="row" id="confirmation" style="display:none;">
                                     <img src="dist/images/tick@3x.png" alt="" style="width: 24px;
                                         margin-right: 10px;" class="col-lg-6" >
                                     <h4 class="col-lg-6" style="color: green;">Thanks for subscribing to our newsletter<h4>
@@ -666,11 +671,13 @@
                                             <label for="exampleFormControlInput1" class="form-label">
                                                 First name
                                             </label>
-                                            <input id="exampleFormControlInput1" class="form-control" onfocus="upfnFunction()" onkeyup="upfnFunction()"
-                                        onkeydown="downfnFunction()" type="text" placeholder="Enter your first name "
-                                                aria-label="default input example">
-                                        <div id="fn_error" class="invalid-feedback" style="display:none;">Please enter your
-                                        first name</div>
+                                            <input id="exampleFormControlInput1" class="form-control"
+                                                onfocus="upfnFunction()" onkeyup="upfnFunction()"
+                                                onkeydown="downfnFunction()" type="text"
+                                                placeholder="Enter your first name " aria-label="default input example">
+                                            <div id="fn_error" class="invalid-feedback" style="display:none;">Please
+                                                enter your
+                                                first name</div>
                                         </div>
                                     </div>
 
@@ -679,11 +686,13 @@
                                             <label for="exampleFormControlInput2" class="form-label">
                                                 Last name
                                             </label>
-                                            <input id="exampleFormControlInput2" class="form-control" onfocus="uplnFunction()" onkeyup="uplnFunction()"
-                                        onkeydown="downlnFunction()" type="text" placeholder="Enter your last name"
-                                                aria-label="default input example">
-                                    <div id="ln_error" class="invalid-feedback" style="display:none;">Please enter your
-                                        last name</div>
+                                            <input id="exampleFormControlInput2" class="form-control"
+                                                onfocus="uplnFunction()" onkeyup="uplnFunction()"
+                                                onkeydown="downlnFunction()" type="text"
+                                                placeholder="Enter your last name" aria-label="default input example">
+                                            <div id="ln_error" class="invalid-feedback" style="display:none;">Please
+                                                enter your
+                                                last name</div>
                                         </div>
                                     </div>
                                 </div>
@@ -692,26 +701,32 @@
                                         <div class="form-group">
                                             <label for="exampleFormControlInput3" class="form-label">Email
                                                 address</label>
-                                            <input type="email" onfocus="upEmailFunction()" onblur="upEmailFunction()" onkeyup="upEmailFunction()"
-                                        onkeydown="downEmailFunction()" class="form-control" id="exampleFormControlInput3"
+                                            <input type="email" onfocus="upEmailFunction()" onblur="upEmailFunction()"
+                                                onkeyup="upEmailFunction()" onkeydown="downEmailFunction()"
+                                                class="form-control" id="exampleFormControlInput3"
                                                 placeholder="Enter your email address">
-                                                <div id="e_error" class="invalid-feedback" style="display:none;">Please enter a
-                                        valid email</div>
+                                            <div id="e_error" class="invalid-feedback" style="display:none;">Please
+                                                enter a
+                                                valid email</div>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                                        required>
                                     <label class="form-check-label" for="flexCheckDefault">
                                         I do agree to the terms & conditions
                                     </label>
                                 </div>
-
+                                <p class="msg">
+                                    <img src="dist/images/tick@3x.png" alt="">
+                                    Thanks for subscribing to our newsletter
+                                </p>
                                 <button class="submit" type="submit">Submit
 
                                 </button>
-                                
+
 
                         </div>
                         <div class="col-lg-5">
@@ -785,7 +800,8 @@
 
 
     <!--CODE OF CONDUCT Modal 2-->
-    <div class="modal fade code-modal" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal fade code-modal" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+        aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header border-0">
@@ -840,7 +856,8 @@
 
 
     <!-- Privacy Policy Modal 3-->
-    <div class="modal fade privacy-policy" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+    <div class="modal fade privacy-policy" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3"
+        aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header border-0">
@@ -972,7 +989,8 @@
 
 
     <!--About Modal 1-->
-    <div class="modal fade about-modal" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+    <div class="modal fade about-modal" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4"
+        aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header border-0">
@@ -1057,109 +1075,118 @@
                 },
                 variant: 'featherlight-gallery2'
             });
+            // Fixed header
+            $(window).scroll(function () {
+                var sticky = $('.sticky'),
+                    scroll = $(window).scrollTop();
+
+                if (scroll >= 100) sticky.addClass('fixed');
+                else sticky.removeClass('fixed');
+            });
         });
-        
-        
-            function upEmailFunction() {
-        var x = document.getElementById("exampleFormControlInput3");  //'e_error
-        var valid = /\S+@\S+\.\S+/.test(x.value);
-        if ((x.value == "") || (!valid)) {
-            document.getElementById("e_error").style.display = "block";
-        }
-    }
 
 
-
-    function downEmailFunction() {
-        var x = document.getElementById("exampleFormControlInput3");  //e_error
-        var valid = /\S+@\S+\.\S+/.test(x.value);
-        if ((x.value == "") || (valid)) {
-            document.getElementById("e_error").style.display = "none";
-        }
-    }
-        
-        
-        
-    function upfnFunction() {
-        var x = document.getElementById("exampleFormControlInput1");  //fn_error
-        if (x.value == "") {
-            document.getElementById("fn_error").style.display = "block";
-        }
-    }
-
-
-
-    function downfnFunction() {
-        var x = document.getElementById("exampleFormControlInput1");  //fn_error
-        if (x.value == "") {
-            document.getElementById("fn_error").style.display = "none";
-        }
-    }
-
-    ///////////////////////////////////
-
-    function uplnFunction() {
-        var x = document.getElementById("exampleFormControlInput2");  //'ln_error
-        if (x.value == "") {
-            document.getElementById("ln_error").style.display = "block";
-        }
-    }
-
-
-
-    function downlnFunction() {
-        var x = document.getElementById("exampleFormControlInput2");  //ln_error
-        if (x.value == "") {
-            document.getElementById("ln_error").style.display = "none";
-        }
-    }
-
-        
-         function submitForm() {
-
-        var fn = document.getElementById("exampleFormControlInput1").value;
-        var ln = document.getElementById("exampleFormControlInput2").value;
-        var e = document.getElementById("exampleFormControlInput3").value;
-
-        var valid = /\S+@\S+\.\S+/.test(e);
-
-        if (valid) {
-            if (fn.value !== "" && ln.value !== "" &&  e.value !== "") {
-                var dataString = 'FirstName=' + fn + '&LastName=' + ln + '&Email=' + e;
-                
-                //var form = document.getElementById("registerForm");
-                //var msg = document.getElementById("confirmation");
-                //form.style.display = "none";
-                //msg.style.display = "block";
-
-            
-                $.ajax({
-                    type: "POST",
-                    url: "post.php",
-                    data: dataString,
-                    cache: false,
-                    success: function (html) {
-                        
-                    }
-
-                });
-
+        function upEmailFunction() {
+            var x = document.getElementById("exampleFormControlInput3");  //'e_error
+            var valid = /\S+@\S+\.\S+/.test(x.value);
+            if ((x.value == "") || (!valid)) {
+                document.getElementById("e_error").style.display = "block";
             }
         }
-    }
 
-        
+
+
+        function downEmailFunction() {
+            var x = document.getElementById("exampleFormControlInput3");  //e_error
+            var valid = /\S+@\S+\.\S+/.test(x.value);
+            if ((x.value == "") || (valid)) {
+                document.getElementById("e_error").style.display = "none";
+            }
+        }
+
+
+
+        function upfnFunction() {
+            var x = document.getElementById("exampleFormControlInput1");  //fn_error
+            if (x.value == "") {
+                document.getElementById("fn_error").style.display = "block";
+            }
+        }
+
+
+
+        function downfnFunction() {
+            var x = document.getElementById("exampleFormControlInput1");  //fn_error
+            if (x.value == "") {
+                document.getElementById("fn_error").style.display = "none";
+            }
+        }
+
+        ///////////////////////////////////
+
+        function uplnFunction() {
+            var x = document.getElementById("exampleFormControlInput2");  //'ln_error
+            if (x.value == "") {
+                document.getElementById("ln_error").style.display = "block";
+            }
+        }
+
+
+
+        function downlnFunction() {
+            var x = document.getElementById("exampleFormControlInput2");  //ln_error
+            if (x.value == "") {
+                document.getElementById("ln_error").style.display = "none";
+            }
+        }
+
+
+        function submitForm() {
+
+            var fn = document.getElementById("exampleFormControlInput1").value;
+            var ln = document.getElementById("exampleFormControlInput2").value;
+            var e = document.getElementById("exampleFormControlInput3").value;
+
+            var valid = /\S+@\S+\.\S+/.test(e);
+
+            if (valid) {
+                if (fn.value !== "" && ln.value !== "" && e.value !== "") {
+                    var dataString = 'FirstName=' + fn + '&LastName=' + ln + '&Email=' + e;
+
+                    //var form = document.getElementById("registerForm");
+                    //var msg = document.getElementById("confirmation");
+                    //form.style.display = "none";
+                    //msg.style.display = "block";
+
+
+                    $.ajax({
+                        type: "POST",
+                        url: "post.php",
+                        data: dataString,
+                        cache: false,
+                        success: function (html) {
+
+                        }
+
+                    });
+
+                }
+            }
+        }
+
+
     </script>
 </body>
 <!-- Hotjar Tracking Code for resiliencesummit.online -->
 <script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:1978547,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    (function (h, o, t, j, a, r) {
+        h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+        h._hjSettings = { hjid: 1978547, hjsv: 6 };
+        a = o.getElementsByTagName('head')[0];
+        r = o.createElement('script'); r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
         a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
 </script>
+
 </html>
