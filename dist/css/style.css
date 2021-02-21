@@ -882,7 +882,7 @@ margin:15px 0;
     padding: 9px;
   }
   .intro {
-    background-size: 117%;
+    background-size: cover;
   }
   .intro-desc p,
   .intro-desc .custom-font {
@@ -1044,6 +1044,11 @@ margin:15px 0;
   }
   .navbar-brand{
     margin-left:15px !important;
+  }
+  .col-wz-img ul li {
+    display: flex;
+    align-items: start;
+    line-height: normal;
   }
 }
 @media (max-width:768px) {
