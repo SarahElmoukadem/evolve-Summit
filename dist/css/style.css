@@ -29,8 +29,8 @@
   top: 50px;
   /* left: calc((100vw - 1140px) / 2);
   right: calc((100vw - 1140px) / 2); */
-  left: 15px;
-  right: 15px;
+  left: 0px;
+  right: 0px;
   margin: auto;
   text-align: center;
 }
@@ -839,6 +839,9 @@ margin: 50px auto 0;
   }
 }
 @media (max-width: 991px) {
+.main-header {
+display: flex;
+}
   .navbar-toggler-icon {
     border-bottom: 2px solid #fff;
     position: relative;
