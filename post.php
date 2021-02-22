@@ -22,7 +22,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "insert into user(first_name, last_name, email) values 
+$sql = "insert into subscriber(first_name, last_name, email) values 
 ('$fname', '$lname', '$email')";
 $result = $conn->query($sql);
 
